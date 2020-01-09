@@ -1,0 +1,105 @@
+:root {
+  --page-1-color: #92f33b;
+  --page-2-color: #3399ff;
+  --page-3-color: #f33bee;
+  --page-4-color: #819bb4;
+}
+
+.anchor {
+  font-size: 0;
+  height: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page-1 {
+  background-color: var(--page-1-color);}
+
+.page-2 {
+  background-color: var(--page-2-color);}
+
+.page-3 {
+  background-color: var(--page-3-color);}
+
+.page-4 {
+  background-color: var(--page-4-color);}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+  display: inline-block;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+.page-1 h1 {
+  animation-name: moving-vertically;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  transform: translateY(-600px);
+}
+
+@keyframes moving-vertically {
+
+    to {
+      transform: translateY(0);
+    }
+}
+
+
+.page-1 p {
+  animation-name: moving-gorizontaly;
+  display: inline-block;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: translateX(-1800px);
+}
+
+@keyframes moving-gorizontaly {
+
+    to {
+      transform: translateX(0);
+    }
+}
